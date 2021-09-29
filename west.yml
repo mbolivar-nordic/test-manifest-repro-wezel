@@ -196,6 +196,9 @@ manifest:
     path: modules/debug/TraceRecorder
     groups:
     - debug
-  self:
-    path: nrf
+  - name: nrf
+    url: https://github.com/nrfconnect/sdk-nrf
+    revision: ec259c4480084e1b338138aa53d4c9a37215e4cd
     west-commands: scripts/west-commands.yml
+  self:
+    path: test-manifest
